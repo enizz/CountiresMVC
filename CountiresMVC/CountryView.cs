@@ -13,7 +13,6 @@ namespace CountiresMVC
             DisplayCountry = country;
         }
         public Country DisplayCountry { get; set; }
-        
         public void Display()
         {
             string countrycolors = "";
@@ -22,7 +21,5 @@ namespace CountiresMVC
             Console.WriteLine("Continent: " + DisplayCountry.Continent);
             Console.WriteLine("Colors: " + countrycolors);
         }
-
-
     }
 }

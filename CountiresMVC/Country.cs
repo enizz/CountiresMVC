@@ -14,7 +14,6 @@ namespace CountiresMVC
             Continent = continent;
             Colors = colors;
         }
-
         public string Name { get; set; }
         public string Continent { get; set; }
         public List<string> Colors { get; set; }

@@ -14,7 +14,6 @@ namespace CountiresMVC
             new Country("Papua New Guinea", "Oceania", new List<string>(){"black", "red", "yellow"}),
             new Country("Moldova", "Europe", new List<string>(){"blue", "yellow", "red"})
         };
-        
         public void CountryAction(Country c)
         {
             var x = new CountryView(c);
@@ -26,14 +25,8 @@ namespace CountiresMVC
             var viewList = new CountryListView(CountryDB);
             viewList.Display();
             Console.WriteLine("Please select 1 - " + viewList.Countries.Count + ":");
-            int input = int.Parse(Console.ReadLine());
-            input = input - 1;
+            int input = int.Parse(Console.ReadLine()) - 1;
             CountryAction(CountryDB[input]);
-        
-        
-        
-        
-        
         }
     }
 }

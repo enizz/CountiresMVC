@@ -12,9 +12,7 @@ namespace CountiresMVC
         {
             Countries = countries;
         }
-
         public List<Country> Countries { get; set; }
-
         public void Display()
         {
             Console.WriteLine("Here is a list of countries: ");
