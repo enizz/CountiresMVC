@@ -26,7 +26,9 @@ namespace CountiresMVC
             viewList.Display();
             Console.WriteLine("Please select 1 - " + viewList.Countries.Count + ":");
             int input = int.Parse(Console.ReadLine()) - 1;
+            Console.Clear();
             CountryAction(CountryDB[input]);
+            Console.WriteLine("Would you like to learn about another country?");
         }
     }
 }
